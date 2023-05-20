@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2 Contest</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h3>Filter UI Cards via their Profession</h3>
+    <div class="dropdown">
+        <button class="dropdown-btn">
+            <span>Profession</span>
+            <span class="material-icons">expand_more</span>
+        </button>
+        <div class="professions">
+            <select name="profession" id="prof" multiple>
+                <option value="developer">Developer</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+    </div>
+    <div id="cards">
+
+    </div>
+    <button id="filter-btn">Filter</button>
+    <h3>Add a new user</h3>
+    <div class="input-cont">
+        <div class="input1">
+            <label for="name">Enter Name</label><br>
+            <input type="text" id="name">
+        </div>
+        <div class="input2">
+            <label for="profession">Enter Profession</label><br>
+            <input type="text" id="profession">
+        </div>
+        <div class="input3">
+            <label for="age">Enter Age</label><br>
+            <input type="text" id="age">
+        </div>
+    </div>
+
+    <button id="adduser-btn">Add User</button>
+    <script src="script.js"></script>
+</body>
+</html>
